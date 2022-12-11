@@ -1,0 +1,93 @@
+div {
+    margin-top:10px
+}
+
+
+/* {
+          <Paper
+      sx={{
+        marginTop: "20px",
+        padding: "20px",
+      }}
+    >
+      <form autoComplete="off" noValidate onSubmit={handleSubmit}>
+        <Typography variant="h6" align="center">
+          {currentId ? `Editing "${post.title}"` : "Creating a Memory"}
+        </Typography>
+
+        <TextField
+          name="title"
+          variant="outlined"
+          label="Title"
+          fullWidth
+          value={postData.title}
+          onChange={handleChange}
+        />
+        <TextField
+          name="message"
+          variant="outlined"
+          label="Message"
+          fullWidth
+          value={postData.message}
+          onChange={handleChange}
+        />
+        <ChipInput
+          name="tags"
+          variant="outlined"
+          label="Tags"
+          fullWidth
+          value={postData.tags}
+          onAdd={(chip) =>
+            setPostData({ ...postData, tags: [...postData.tags, chip] })
+          }
+          onDelete={(chipToDelete) =>
+            setPostData({
+              ...postData,
+              tags: postData.tags.filter((chip) => chip !== chipToDelete),
+            })
+          }
+        />
+        <FileBase64
+          type="file"
+          multiple={false}
+          onDone={({ base64 }) =>
+            setPostData({ ...postData, selectedFile: base64 })
+          }
+        />
+        <div>
+          <Button
+            variant="contained"
+            color="primary"
+            size="large"
+            type="submit"
+            fullWidth
+          >
+            Submit
+          </Button>
+        </div>
+        <div>
+          <Button
+            variant="contained"
+            color="secondary"
+            size="small"
+            onClick={clear}
+            fullWidth
+          >
+            Clear
+          </Button>
+        </div>
+      </form>
+    </Paper>
+
+
+          <Paper
+      sx={{
+        marginTop: "20px",
+        padding: "20px",
+      }}
+    >
+      <Typography variant="h6" align="center">
+        Please Sign In to create your own memories and like other's memories.
+      </Typography>
+    </Paper>
+} */
